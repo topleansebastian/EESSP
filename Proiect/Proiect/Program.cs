@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Proiect
+{
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            // Data Source=DESKTOP-PVMUVAC;Initial Catalog=Cabinet;Integrated Security=True
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
+    }
+}
