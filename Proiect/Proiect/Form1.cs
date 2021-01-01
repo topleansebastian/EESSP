@@ -75,6 +75,50 @@ namespace Proiect
             {
                 // TODO: This line of code loads data into the 'cabinetDataSet1.ViewPacienti4' table. You can move, or remove it, as needed.
                 this.viewPacienti4TableAdapter.Fill(this.cabinetDataSet1.ViewPacienti4);
+
+
+
+                DataTable tabelProgramari = new DataTable();
+
+                tabelProgramari.Columns.Add("Interval Orar");
+                tabelProgramari.Columns.Add("Pacient");
+                tabelProgramari.Columns.Add("Mentiuni");
+
+                for(int i = 0; i < 24; i++)
+                {
+
+                    DataRow dr = tabelProgramari.NewRow();
+
+                    if (i < 10)
+                    {
+                        dr["Interval Orar"] = $"0{i}:00 - ";
+                    }
+                    else
+                    {
+                        dr["Interval Orar"] = $"{i}:00 - ";
+
+                    }
+
+                    if (i+1 < 10)
+                    {
+                        dr["Interval Orar"] += $"0{i+1}:00";
+                    }
+                    else
+                    {
+                        dr["Interval Orar"] += $"{i+1}:00";
+
+                    }
+
+                    dr["Pacient"] = "-";
+                    dr["Mentiuni"] = "-";
+
+                    tabelProgramari.Rows.Add(dr);
+                }
+
+
+
+                this.dataGridViewProgramari.DataSource = tabelProgramari;
+
             }
             catch
             {
@@ -355,32 +399,38 @@ namespace Proiect
 
         private async void btnStergerePacient_Click(object sender, EventArgs e)
         {
-            var cnp = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
 
-            using (SqlConnection sql = new SqlConnection(this.ConnectionString))
+            if(MessageBox.Show("Stergere pacient","Stergerea pacientului este definitiva. Continuati?",MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                using (SqlCommand cmd = new SqlCommand("[dbo].[StergerePacient]", sql))
+                var cnp = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+
+                using (SqlConnection sql = new SqlConnection(this.ConnectionString))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@CNP", cnp);
-
-                    try
+                    using (SqlCommand cmd = new SqlCommand("[dbo].[StergerePacient]", sql))
                     {
-                        sql.Open();
-                        await cmd.ExecuteNonQueryAsync();
-                        sql.Close();
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@CNP", cnp);
 
-                        dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
-                    }
-                    catch (Exception exp)
-                    {
-                        var x = exp.Message;
+                        try
+                        {
+                            sql.Open();
+                            await cmd.ExecuteNonQueryAsync();
+                            sql.Close();
+
+                            dataGridView1.Rows.Remove(dataGridView1.CurrentRow);
+                        }
+                        catch (Exception exp)
+                        {
+                            var x = exp.Message;
+
+                        }
 
                     }
 
                 }
-
             }
+
+            
         }
     }
 }

@@ -41,6 +41,22 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPageConsultatii = new System.Windows.Forms.TabPage();
             this.tabPagePacienti = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.numeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenumeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataNasteriiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nrTelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statutSocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grupSangvinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.masaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inaltimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timestampDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.viewPacienti4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cabinetDataSet1 = new Proiect.CabinetDataSet();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioButtonIstoricDescrescator = new System.Windows.Forms.RadioButton();
             this.radioButtonIstoricCrescator = new System.Windows.Forms.RadioButton();
@@ -57,7 +73,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabPageRapoarte = new System.Windows.Forms.TabPage();
             this.tabPageProgramari = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -65,7 +80,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.viewPacienti2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cabinetDataSet1 = new Proiect.CabinetDataSet();
             this.viewPacientiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cabinetDataSet = new Proiect.CabinetDataSet();
             this.viewPacientiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -76,32 +90,34 @@
             this.viewPacienti3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cabinetDataSet2 = new Proiect.CabinetDataSet();
             this.viewPacienti3BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.viewPacienti4BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.viewPacienti4TableAdapter = new Proiect.CabinetDataSetTableAdapters.ViewPacienti4TableAdapter();
-            this.numeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prenumeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNasteriiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nrTelefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.statutSocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grupSangvinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.masaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inaltimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timestampDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.radioButtonAfisareAstazi = new System.Windows.Forms.RadioButton();
+            this.radioButtonAfisare7zile = new System.Windows.Forms.RadioButton();
+            this.radioButtonAfisare30zile = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.radioButtonAfisareCustom = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.radioButton30min = new System.Windows.Forms.RadioButton();
+            this.radioButton60min = new System.Windows.Forms.RadioButton();
+            this.radioButton15min = new System.Windows.Forms.RadioButton();
+            this.dataGridViewProgramari = new System.Windows.Forms.DataGridView();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPageConectare.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPagePacienti.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti4BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPageProgramari.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacienti2BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource1)).BeginInit();
@@ -111,8 +127,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti4BindingSource)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProgramari)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -238,6 +255,121 @@
             this.tabPagePacienti.Text = "Pacienti";
             this.tabPagePacienti.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.numeDataGridViewTextBoxColumn,
+            this.prenumeDataGridViewTextBoxColumn,
+            this.cNPDataGridViewTextBoxColumn,
+            this.dataNasteriiDataGridViewTextBoxColumn,
+            this.sexDataGridViewTextBoxColumn,
+            this.nrTelefonDataGridViewTextBoxColumn,
+            this.statutSocialDataGridViewTextBoxColumn,
+            this.adresaDataGridViewTextBoxColumn,
+            this.grupSangvinDataGridViewTextBoxColumn,
+            this.rHDataGridViewTextBoxColumn,
+            this.masaDataGridViewTextBoxColumn,
+            this.inaltimeDataGridViewTextBoxColumn,
+            this.timestampDataGridViewImageColumn});
+            this.dataGridView1.DataSource = this.viewPacienti4BindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(206, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(914, 529);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // numeDataGridViewTextBoxColumn
+            // 
+            this.numeDataGridViewTextBoxColumn.DataPropertyName = "Nume";
+            this.numeDataGridViewTextBoxColumn.HeaderText = "Nume";
+            this.numeDataGridViewTextBoxColumn.Name = "numeDataGridViewTextBoxColumn";
+            // 
+            // prenumeDataGridViewTextBoxColumn
+            // 
+            this.prenumeDataGridViewTextBoxColumn.DataPropertyName = "Prenume";
+            this.prenumeDataGridViewTextBoxColumn.HeaderText = "Prenume";
+            this.prenumeDataGridViewTextBoxColumn.Name = "prenumeDataGridViewTextBoxColumn";
+            // 
+            // cNPDataGridViewTextBoxColumn
+            // 
+            this.cNPDataGridViewTextBoxColumn.DataPropertyName = "CNP";
+            this.cNPDataGridViewTextBoxColumn.HeaderText = "CNP";
+            this.cNPDataGridViewTextBoxColumn.Name = "cNPDataGridViewTextBoxColumn";
+            // 
+            // dataNasteriiDataGridViewTextBoxColumn
+            // 
+            this.dataNasteriiDataGridViewTextBoxColumn.DataPropertyName = "DataNasterii";
+            this.dataNasteriiDataGridViewTextBoxColumn.HeaderText = "DataNasterii";
+            this.dataNasteriiDataGridViewTextBoxColumn.Name = "dataNasteriiDataGridViewTextBoxColumn";
+            // 
+            // sexDataGridViewTextBoxColumn
+            // 
+            this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
+            this.sexDataGridViewTextBoxColumn.HeaderText = "Sex";
+            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
+            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nrTelefonDataGridViewTextBoxColumn
+            // 
+            this.nrTelefonDataGridViewTextBoxColumn.DataPropertyName = "NrTelefon";
+            this.nrTelefonDataGridViewTextBoxColumn.HeaderText = "NrTelefon";
+            this.nrTelefonDataGridViewTextBoxColumn.Name = "nrTelefonDataGridViewTextBoxColumn";
+            // 
+            // statutSocialDataGridViewTextBoxColumn
+            // 
+            this.statutSocialDataGridViewTextBoxColumn.DataPropertyName = "StatutSocial";
+            this.statutSocialDataGridViewTextBoxColumn.HeaderText = "StatutSocial";
+            this.statutSocialDataGridViewTextBoxColumn.Name = "statutSocialDataGridViewTextBoxColumn";
+            // 
+            // adresaDataGridViewTextBoxColumn
+            // 
+            this.adresaDataGridViewTextBoxColumn.DataPropertyName = "Adresa";
+            this.adresaDataGridViewTextBoxColumn.HeaderText = "Adresa";
+            this.adresaDataGridViewTextBoxColumn.Name = "adresaDataGridViewTextBoxColumn";
+            // 
+            // grupSangvinDataGridViewTextBoxColumn
+            // 
+            this.grupSangvinDataGridViewTextBoxColumn.DataPropertyName = "GrupSangvin";
+            this.grupSangvinDataGridViewTextBoxColumn.HeaderText = "GrupSangvin";
+            this.grupSangvinDataGridViewTextBoxColumn.Name = "grupSangvinDataGridViewTextBoxColumn";
+            // 
+            // rHDataGridViewTextBoxColumn
+            // 
+            this.rHDataGridViewTextBoxColumn.DataPropertyName = "RH";
+            this.rHDataGridViewTextBoxColumn.HeaderText = "RH";
+            this.rHDataGridViewTextBoxColumn.Name = "rHDataGridViewTextBoxColumn";
+            this.rHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // masaDataGridViewTextBoxColumn
+            // 
+            this.masaDataGridViewTextBoxColumn.DataPropertyName = "Masa";
+            this.masaDataGridViewTextBoxColumn.HeaderText = "Masa";
+            this.masaDataGridViewTextBoxColumn.Name = "masaDataGridViewTextBoxColumn";
+            // 
+            // inaltimeDataGridViewTextBoxColumn
+            // 
+            this.inaltimeDataGridViewTextBoxColumn.DataPropertyName = "Inaltime";
+            this.inaltimeDataGridViewTextBoxColumn.HeaderText = "Inaltime";
+            this.inaltimeDataGridViewTextBoxColumn.Name = "inaltimeDataGridViewTextBoxColumn";
+            // 
+            // timestampDataGridViewImageColumn
+            // 
+            this.timestampDataGridViewImageColumn.DataPropertyName = "timestamp";
+            this.timestampDataGridViewImageColumn.HeaderText = "timestamp";
+            this.timestampDataGridViewImageColumn.Name = "timestampDataGridViewImageColumn";
+            this.timestampDataGridViewImageColumn.ReadOnly = true;
+            // 
+            // viewPacienti4BindingSource
+            // 
+            this.viewPacienti4BindingSource.DataMember = "ViewPacienti4";
+            this.viewPacienti4BindingSource.DataSource = this.cabinetDataSet1;
+            // 
+            // cabinetDataSet1
+            // 
+            this.cabinetDataSet1.DataSetName = "CabinetDataSet";
+            this.cabinetDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Aqua;
@@ -344,7 +476,7 @@
             this.btnEditarePacient.Name = "btnEditarePacient";
             this.btnEditarePacient.Size = new System.Drawing.Size(188, 23);
             this.btnEditarePacient.TabIndex = 8;
-            this.btnEditarePacient.Text = "Editare";
+            this.btnEditarePacient.Text = "Editare/Vizualizare";
             this.btnEditarePacient.UseVisualStyleBackColor = false;
             // 
             // btnAdaugarePacient
@@ -404,7 +536,9 @@
             // 
             // tabPageProgramari
             // 
-            this.tabPageProgramari.Controls.Add(this.tableLayoutPanel1);
+            this.tabPageProgramari.Controls.Add(this.dataGridViewProgramari);
+            this.tabPageProgramari.Controls.Add(this.panel3);
+            this.tabPageProgramari.Controls.Add(this.panel2);
             this.tabPageProgramari.Controls.Add(this.button3);
             this.tabPageProgramari.Controls.Add(this.button2);
             this.tabPageProgramari.Controls.Add(this.button1);
@@ -415,22 +549,9 @@
             this.tabPageProgramari.Text = "Programari";
             this.tabPageProgramari.UseVisualStyleBackColor = true;
             // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(462, 230);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel1.TabIndex = 6;
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(70, 257);
+            this.button3.Location = new System.Drawing.Point(179, 17);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -439,7 +560,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(70, 188);
+            this.button2.Location = new System.Drawing.Point(98, 17);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -448,7 +569,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(70, 122);
+            this.button1.Location = new System.Drawing.Point(17, 17);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -488,11 +609,6 @@
             // 
             this.viewPacienti2BindingSource.DataMember = "ViewPacienti2";
             this.viewPacienti2BindingSource.DataSource = this.cabinetDataSet1;
-            // 
-            // cabinetDataSet1
-            // 
-            this.cabinetDataSet1.DataSetName = "CabinetDataSet";
-            this.cabinetDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // viewPacientiBindingSource
             // 
@@ -549,119 +665,160 @@
             this.viewPacienti3BindingSource1.DataMember = "ViewPacienti3";
             this.viewPacienti3BindingSource1.DataSource = this.cabinetDataSet2;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numeDataGridViewTextBoxColumn,
-            this.prenumeDataGridViewTextBoxColumn,
-            this.cNPDataGridViewTextBoxColumn,
-            this.dataNasteriiDataGridViewTextBoxColumn,
-            this.sexDataGridViewTextBoxColumn,
-            this.nrTelefonDataGridViewTextBoxColumn,
-            this.statutSocialDataGridViewTextBoxColumn,
-            this.adresaDataGridViewTextBoxColumn,
-            this.grupSangvinDataGridViewTextBoxColumn,
-            this.rHDataGridViewTextBoxColumn,
-            this.masaDataGridViewTextBoxColumn,
-            this.inaltimeDataGridViewTextBoxColumn,
-            this.timestampDataGridViewImageColumn});
-            this.dataGridView1.DataSource = this.viewPacienti4BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(206, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(914, 529);
-            this.dataGridView1.TabIndex = 5;
-            // 
-            // viewPacienti4BindingSource
-            // 
-            this.viewPacienti4BindingSource.DataMember = "ViewPacienti4";
-            this.viewPacienti4BindingSource.DataSource = this.cabinetDataSet1;
-            // 
             // viewPacienti4TableAdapter
             // 
             this.viewPacienti4TableAdapter.ClearBeforeFill = true;
             // 
-            // numeDataGridViewTextBoxColumn
+            // radioButtonAfisareAstazi
             // 
-            this.numeDataGridViewTextBoxColumn.DataPropertyName = "Nume";
-            this.numeDataGridViewTextBoxColumn.HeaderText = "Nume";
-            this.numeDataGridViewTextBoxColumn.Name = "numeDataGridViewTextBoxColumn";
+            this.radioButtonAfisareAstazi.AutoSize = true;
+            this.radioButtonAfisareAstazi.Checked = true;
+            this.radioButtonAfisareAstazi.Location = new System.Drawing.Point(3, 3);
+            this.radioButtonAfisareAstazi.Name = "radioButtonAfisareAstazi";
+            this.radioButtonAfisareAstazi.Size = new System.Drawing.Size(53, 17);
+            this.radioButtonAfisareAstazi.TabIndex = 7;
+            this.radioButtonAfisareAstazi.TabStop = true;
+            this.radioButtonAfisareAstazi.Text = "Astazi";
+            this.radioButtonAfisareAstazi.UseVisualStyleBackColor = true;
             // 
-            // prenumeDataGridViewTextBoxColumn
+            // radioButtonAfisare7zile
             // 
-            this.prenumeDataGridViewTextBoxColumn.DataPropertyName = "Prenume";
-            this.prenumeDataGridViewTextBoxColumn.HeaderText = "Prenume";
-            this.prenumeDataGridViewTextBoxColumn.Name = "prenumeDataGridViewTextBoxColumn";
+            this.radioButtonAfisare7zile.AutoSize = true;
+            this.radioButtonAfisare7zile.Location = new System.Drawing.Point(3, 39);
+            this.radioButtonAfisare7zile.Name = "radioButtonAfisare7zile";
+            this.radioButtonAfisare7zile.Size = new System.Drawing.Size(109, 17);
+            this.radioButtonAfisare7zile.TabIndex = 8;
+            this.radioButtonAfisare7zile.Text = "Urmatoarele 7 zile";
+            this.radioButtonAfisare7zile.UseVisualStyleBackColor = true;
             // 
-            // cNPDataGridViewTextBoxColumn
+            // radioButtonAfisare30zile
             // 
-            this.cNPDataGridViewTextBoxColumn.DataPropertyName = "CNP";
-            this.cNPDataGridViewTextBoxColumn.HeaderText = "CNP";
-            this.cNPDataGridViewTextBoxColumn.Name = "cNPDataGridViewTextBoxColumn";
+            this.radioButtonAfisare30zile.AutoSize = true;
+            this.radioButtonAfisare30zile.Location = new System.Drawing.Point(3, 73);
+            this.radioButtonAfisare30zile.Name = "radioButtonAfisare30zile";
+            this.radioButtonAfisare30zile.Size = new System.Drawing.Size(115, 17);
+            this.radioButtonAfisare30zile.TabIndex = 9;
+            this.radioButtonAfisare30zile.Text = "Urmatoarele 30 zile";
+            this.radioButtonAfisare30zile.UseVisualStyleBackColor = true;
             // 
-            // dataNasteriiDataGridViewTextBoxColumn
+            // label9
             // 
-            this.dataNasteriiDataGridViewTextBoxColumn.DataPropertyName = "DataNasterii";
-            this.dataNasteriiDataGridViewTextBoxColumn.HeaderText = "DataNasterii";
-            this.dataNasteriiDataGridViewTextBoxColumn.Name = "dataNasteriiDataGridViewTextBoxColumn";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(30, 143);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Start";
             // 
-            // sexDataGridViewTextBoxColumn
+            // label10
             // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "Sex";
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.ReadOnly = true;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(30, 178);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 13);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "Stop";
             // 
-            // nrTelefonDataGridViewTextBoxColumn
+            // dateTimePicker1
             // 
-            this.nrTelefonDataGridViewTextBoxColumn.DataPropertyName = "NrTelefon";
-            this.nrTelefonDataGridViewTextBoxColumn.HeaderText = "NrTelefon";
-            this.nrTelefonDataGridViewTextBoxColumn.Name = "nrTelefonDataGridViewTextBoxColumn";
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(65, 137);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 12;
             // 
-            // statutSocialDataGridViewTextBoxColumn
+            // dateTimePicker2
             // 
-            this.statutSocialDataGridViewTextBoxColumn.DataPropertyName = "StatutSocial";
-            this.statutSocialDataGridViewTextBoxColumn.HeaderText = "StatutSocial";
-            this.statutSocialDataGridViewTextBoxColumn.Name = "statutSocialDataGridViewTextBoxColumn";
+            this.dateTimePicker2.Enabled = false;
+            this.dateTimePicker2.Location = new System.Drawing.Point(65, 172);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 13;
             // 
-            // adresaDataGridViewTextBoxColumn
+            // radioButtonAfisareCustom
             // 
-            this.adresaDataGridViewTextBoxColumn.DataPropertyName = "Adresa";
-            this.adresaDataGridViewTextBoxColumn.HeaderText = "Adresa";
-            this.adresaDataGridViewTextBoxColumn.Name = "adresaDataGridViewTextBoxColumn";
+            this.radioButtonAfisareCustom.AutoSize = true;
+            this.radioButtonAfisareCustom.Location = new System.Drawing.Point(3, 105);
+            this.radioButtonAfisareCustom.Name = "radioButtonAfisareCustom";
+            this.radioButtonAfisareCustom.Size = new System.Drawing.Size(87, 17);
+            this.radioButtonAfisareCustom.TabIndex = 15;
+            this.radioButtonAfisareCustom.Text = "Alta perioada";
+            this.radioButtonAfisareCustom.UseVisualStyleBackColor = true;
             // 
-            // grupSangvinDataGridViewTextBoxColumn
+            // panel2
             // 
-            this.grupSangvinDataGridViewTextBoxColumn.DataPropertyName = "GrupSangvin";
-            this.grupSangvinDataGridViewTextBoxColumn.HeaderText = "GrupSangvin";
-            this.grupSangvinDataGridViewTextBoxColumn.Name = "grupSangvinDataGridViewTextBoxColumn";
+            this.panel2.Controls.Add(this.radioButtonAfisareAstazi);
+            this.panel2.Controls.Add(this.radioButtonAfisareCustom);
+            this.panel2.Controls.Add(this.radioButtonAfisare7zile);
+            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.radioButtonAfisare30zile);
+            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Location = new System.Drawing.Point(17, 60);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(278, 213);
+            this.panel2.TabIndex = 16;
             // 
-            // rHDataGridViewTextBoxColumn
+            // panel3
             // 
-            this.rHDataGridViewTextBoxColumn.DataPropertyName = "RH";
-            this.rHDataGridViewTextBoxColumn.HeaderText = "RH";
-            this.rHDataGridViewTextBoxColumn.Name = "rHDataGridViewTextBoxColumn";
-            this.rHDataGridViewTextBoxColumn.ReadOnly = true;
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.radioButton15min);
+            this.panel3.Controls.Add(this.radioButton60min);
+            this.panel3.Controls.Add(this.radioButton30min);
+            this.panel3.Location = new System.Drawing.Point(17, 298);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(281, 165);
+            this.panel3.TabIndex = 18;
             // 
-            // masaDataGridViewTextBoxColumn
+            // radioButton30min
             // 
-            this.masaDataGridViewTextBoxColumn.DataPropertyName = "Masa";
-            this.masaDataGridViewTextBoxColumn.HeaderText = "Masa";
-            this.masaDataGridViewTextBoxColumn.Name = "masaDataGridViewTextBoxColumn";
+            this.radioButton30min.AutoSize = true;
+            this.radioButton30min.Location = new System.Drawing.Point(36, 60);
+            this.radioButton30min.Name = "radioButton30min";
+            this.radioButton30min.Size = new System.Drawing.Size(71, 17);
+            this.radioButton30min.TabIndex = 0;
+            this.radioButton30min.Text = "30 minute";
+            this.radioButton30min.UseVisualStyleBackColor = true;
             // 
-            // inaltimeDataGridViewTextBoxColumn
+            // radioButton60min
             // 
-            this.inaltimeDataGridViewTextBoxColumn.DataPropertyName = "Inaltime";
-            this.inaltimeDataGridViewTextBoxColumn.HeaderText = "Inaltime";
-            this.inaltimeDataGridViewTextBoxColumn.Name = "inaltimeDataGridViewTextBoxColumn";
+            this.radioButton60min.AutoSize = true;
+            this.radioButton60min.Checked = true;
+            this.radioButton60min.Location = new System.Drawing.Point(36, 83);
+            this.radioButton60min.Name = "radioButton60min";
+            this.radioButton60min.Size = new System.Drawing.Size(71, 17);
+            this.radioButton60min.TabIndex = 1;
+            this.radioButton60min.TabStop = true;
+            this.radioButton60min.Text = "60 minute";
+            this.radioButton60min.UseVisualStyleBackColor = true;
             // 
-            // timestampDataGridViewImageColumn
+            // radioButton15min
             // 
-            this.timestampDataGridViewImageColumn.DataPropertyName = "timestamp";
-            this.timestampDataGridViewImageColumn.HeaderText = "timestamp";
-            this.timestampDataGridViewImageColumn.Name = "timestampDataGridViewImageColumn";
-            this.timestampDataGridViewImageColumn.ReadOnly = true;
+            this.radioButton15min.AutoSize = true;
+            this.radioButton15min.Location = new System.Drawing.Point(36, 37);
+            this.radioButton15min.Name = "radioButton15min";
+            this.radioButton15min.Size = new System.Drawing.Size(71, 17);
+            this.radioButton15min.TabIndex = 2;
+            this.radioButton15min.Text = "15 minute";
+            this.radioButton15min.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewProgramari
+            // 
+            this.dataGridViewProgramari.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProgramari.Location = new System.Drawing.Point(302, 10);
+            this.dataGridViewProgramari.Name = "dataGridViewProgramari";
+            this.dataGridViewProgramari.Size = new System.Drawing.Size(818, 547);
+            this.dataGridViewProgramari.TabIndex = 19;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(100, 13);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Interval afisare date";
             // 
             // Form1
             // 
@@ -678,6 +835,9 @@
             this.tabPageConectare.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPagePacienti.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti4BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPageProgramari.ResumeLayout(false);
@@ -685,7 +845,6 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacienti2BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource1)).EndInit();
@@ -695,8 +854,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti4BindingSource)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProgramari)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -720,7 +882,6 @@
         private System.Windows.Forms.TabPage tabPagePacienti;
         private System.Windows.Forms.TabPage tabPageRapoarte;
         private System.Windows.Forms.TabPage tabPageProgramari;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -766,6 +927,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn masaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn inaltimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn timestampDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridView dataGridViewProgramari;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.RadioButton radioButton15min;
+        private System.Windows.Forms.RadioButton radioButton60min;
+        private System.Windows.Forms.RadioButton radioButton30min;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButtonAfisareAstazi;
+        private System.Windows.Forms.RadioButton radioButtonAfisareCustom;
+        private System.Windows.Forms.RadioButton radioButtonAfisare7zile;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.RadioButton radioButtonAfisare30zile;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 
