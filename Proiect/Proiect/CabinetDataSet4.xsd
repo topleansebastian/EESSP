@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CabinetDataSet4" targetNamespace="http://tempuri.org/CabinetDataSet4.xsd" xmlns:mstns="http://tempuri.org/CabinetDataSet4.xsd" xmlns="http://tempuri.org/CabinetDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CabinetConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CabinetConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Proiect.Properties.Settings.GlobalReference.Default.CabinetConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewConsultatiiTableAdapter" GeneratorDataComponentClassName="ViewConsultatiiTableAdapter" Name="ViewConsultatii" UserDataComponentName="ViewConsultatiiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CabinetConnectionString1 (Settings)" DbObjectName="Cabinet.dbo.ViewConsultatii" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Data, CNP, Nume, Diagnostic, Simptome, Prescriptii FROM dbo.ViewConsultatii</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Data" DataSetColumn="Data" />
+              <Mapping SourceColumn="CNP" DataSetColumn="CNP" />
+              <Mapping SourceColumn="Nume" DataSetColumn="Nume" />
+              <Mapping SourceColumn="Diagnostic" DataSetColumn="Diagnostic" />
+              <Mapping SourceColumn="Simptome" DataSetColumn="Simptome" />
+              <Mapping SourceColumn="Prescriptii" DataSetColumn="Prescriptii" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CabinetDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CabinetDataSet4" msprop:Generator_UserDSName="CabinetDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewConsultatii" msprop:Generator_TableClassName="ViewConsultatiiDataTable" msprop:Generator_TableVarName="tableViewConsultatii" msprop:Generator_TablePropName="ViewConsultatii" msprop:Generator_RowDeletingName="ViewConsultatiiRowDeleting" msprop:Generator_RowChangingName="ViewConsultatiiRowChanging" msprop:Generator_RowEvHandlerName="ViewConsultatiiRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewConsultatiiRowDeleted" msprop:Generator_UserTableName="ViewConsultatii" msprop:Generator_RowChangedName="ViewConsultatiiRowChanged" msprop:Generator_RowEvArgName="ViewConsultatiiRowChangeEvent" msprop:Generator_RowClassName="ViewConsultatiiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnPropNameInTable="DataColumn" msprop:Generator_UserColumnName="Data" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CNP" msprop:Generator_ColumnVarNameInTable="columnCNP" msprop:Generator_ColumnPropNameInRow="CNP" msprop:Generator_ColumnPropNameInTable="CNPColumn" msprop:Generator_UserColumnName="CNP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nume" msprop:Generator_ColumnVarNameInTable="columnNume" msprop:Generator_ColumnPropNameInRow="Nume" msprop:Generator_ColumnPropNameInTable="NumeColumn" msprop:Generator_UserColumnName="Nume">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Diagnostic" msprop:Generator_ColumnVarNameInTable="columnDiagnostic" msprop:Generator_ColumnPropNameInRow="Diagnostic" msprop:Generator_ColumnPropNameInTable="DiagnosticColumn" msprop:Generator_UserColumnName="Diagnostic">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Simptome" msprop:Generator_ColumnVarNameInTable="columnSimptome" msprop:Generator_ColumnPropNameInRow="Simptome" msprop:Generator_ColumnPropNameInTable="SimptomeColumn" msprop:Generator_UserColumnName="Simptome">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Prescriptii" msprop:Generator_ColumnVarNameInTable="columnPrescriptii" msprop:Generator_ColumnPropNameInRow="Prescriptii" msprop:Generator_ColumnPropNameInTable="PrescriptiiColumn" msprop:Generator_UserColumnName="Prescriptii">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

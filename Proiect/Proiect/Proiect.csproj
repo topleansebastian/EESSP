@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +53,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CabinetDataSet.cs">
+      <DependentUpon>CabinetDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CabinetDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CabinetDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CabinetDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CabinetDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CabinetDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CabinetDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CabinetDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CabinetDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CabinetDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CabinetDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CabinetDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CabinetDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CDS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Components\Pacient.cs" />
     <Compile Include="Components\Popup.cs" />
     <Compile Include="CryptoConversionHandler.cs" />
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,13 +112,26 @@
     <Compile Include="Forms\AdaugarePacient.Designer.cs">
       <DependentUpon>AdaugarePacient.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdaugareProgramare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdaugareProgramare.Designer.cs">
+      <DependentUpon>AdaugareProgramare.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdaugarePacient.resx">
       <DependentUpon>AdaugarePacient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdaugareProgramare.resx">
+      <DependentUpon>AdaugareProgramare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +153,72 @@
     <None Include="CabinetDataSet.xss">
       <DependentUpon>CabinetDataSet.xsd</DependentUpon>
     </None>
+    <None Include="CabinetDataSet1.xsc">
+      <DependentUpon>CabinetDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CabinetDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CabinetDataSet1.xss">
+      <DependentUpon>CabinetDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet2.xsc">
+      <DependentUpon>CabinetDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CabinetDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CabinetDataSet2.xss">
+      <DependentUpon>CabinetDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet3.xsc">
+      <DependentUpon>CabinetDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CabinetDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CabinetDataSet3.xss">
+      <DependentUpon>CabinetDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet4.xsc">
+      <DependentUpon>CabinetDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CabinetDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CabinetDataSet4.xss">
+      <DependentUpon>CabinetDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet5.xsc">
+      <DependentUpon>CabinetDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CabinetDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CabinetDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CabinetDataSet5.xss">
+      <DependentUpon>CabinetDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CDS.xsc">
+      <DependentUpon>CDS.xsd</DependentUpon>
+    </None>
+    <None Include="CDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CDS.xss">
+      <DependentUpon>CDS.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,10 +232,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Images\LoginLogo.png" />
-    <Content Include="SQL\CreateTables.sql" />
+    <Content Include="SQL\StoredProcedures\AdaugareConsultatie.sql" />
+    <Content Include="SQL\StoredProcedures\AdaugareProgramare.Designer.sql" />
+    <Content Include="SQL\StoredProcedures\AdaugareProgramare.sql">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="SQL\StoredProcedures\CautareConsultatie.sql" />
+    <Content Include="SQL\StoredProcedures\SelectareConsultatii.sql" />
+    <Content Include="SQL\StoredProcedures\SelectarePacientiNumePrenume.sql" />
+    <Content Include="SQL\StoredProcedures\StergereConsultatie.sql" />
+    <Content Include="SQL\Tables\AlterTables.sql" />
+    <Content Include="SQL\Tables\CreateTables.sql" />
     <Content Include="SQL\StoredProcedures\AddPacient.sql" />
     <Content Include="SQL\StoredProcedures\CautarePacient.Designer.sql" />
     <Content Include="SQL\StoredProcedures\CautarePacient.sql">
@@ -122,7 +259,11 @@
       <SubType>Form</SubType>
     </Content>
     <Content Include="SQL\StoredProcedures\StergerePacient.sql" />
+    <Content Include="SQL\Views\ViewConsultatiePacient.sql" />
+    <Content Include="SQL\Views\ViewConsultatii.sql" />
+    <Content Include="SQL\Views\ViewFisaPacientului.sql" />
     <Content Include="SQL\Views\ViewPacienti.sql" />
+    <Content Include="SQL\Views\ViewProgramari.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
