@@ -42,44 +42,49 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBoxNume = new System.Windows.Forms.TextBox();
-            this.textBoxPrenume = new System.Windows.Forms.TextBox();
-            this.textBoxCNP = new System.Windows.Forms.TextBox();
-            this.radioButtonSexM = new System.Windows.Forms.RadioButton();
-            this.radioButtonSexF = new System.Windows.Forms.RadioButton();
-            this.textBoxTelefon = new System.Windows.Forms.TextBox();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxCetatenie = new System.Windows.Forms.TextBox();
-            this.textBoxStatusSocial = new System.Windows.Forms.TextBox();
-            this.comboBoxGrupSangvin = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBoxOcupatie = new System.Windows.Forms.TextBox();
+            this.textBoxInaltime = new System.Windows.Forms.TextBox();
+            this.textBoxMasa = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButtonRHPoz = new System.Windows.Forms.RadioButton();
             this.radioButtonRHNeg = new System.Windows.Forms.RadioButton();
-            this.textBoxMasa = new System.Windows.Forms.TextBox();
-            this.textBoxInaltime = new System.Windows.Forms.TextBox();
-            this.textBoxOcupatie = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButtonSexM = new System.Windows.Forms.RadioButton();
+            this.radioButtonSexF = new System.Windows.Forms.RadioButton();
+            this.comboBoxGrupSangvin = new System.Windows.Forms.ComboBox();
+            this.textBoxStatusSocial = new System.Windows.Forms.TextBox();
+            this.textBoxCetatenie = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxTelefon = new System.Windows.Forms.TextBox();
+            this.textBoxCNP = new System.Windows.Forms.TextBox();
+            this.textBoxPrenume = new System.Windows.Forms.TextBox();
+            this.textBoxNume = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxAdresa = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBoxConditiiMunca = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBoxAntecedenteP = new System.Windows.Forms.TextBox();
+            this.textBoxAntecedenteHC = new System.Windows.Forms.TextBox();
+            this.textBoxAlergii = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBoxAlergii = new System.Windows.Forms.TextBox();
-            this.textBoxAntecedenteHC = new System.Windows.Forms.TextBox();
-            this.textBoxAntecedenteP = new System.Windows.Forms.TextBox();
             this.buttonAdauga = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -236,107 +241,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Date personale";
             // 
-            // label19
+            // dateTimePicker1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(45, 93);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(29, 13);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "CNP";
+            this.dateTimePicker1.Location = new System.Drawing.Point(257, 165);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(264, 20);
+            this.dateTimePicker1.TabIndex = 24;
             // 
-            // textBoxNume
+            // textBoxOcupatie
             // 
-            this.textBoxNume.Location = new System.Drawing.Point(81, 28);
-            this.textBoxNume.Name = "textBoxNume";
-            this.textBoxNume.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNume.TabIndex = 3;
+            this.textBoxOcupatie.Location = new System.Drawing.Point(671, 90);
+            this.textBoxOcupatie.Name = "textBoxOcupatie";
+            this.textBoxOcupatie.Size = new System.Drawing.Size(100, 20);
+            this.textBoxOcupatie.TabIndex = 23;
             // 
-            // textBoxPrenume
+            // textBoxInaltime
             // 
-            this.textBoxPrenume.Location = new System.Drawing.Point(81, 58);
-            this.textBoxPrenume.Name = "textBoxPrenume";
-            this.textBoxPrenume.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPrenume.TabIndex = 4;
+            this.textBoxInaltime.Location = new System.Drawing.Point(671, 58);
+            this.textBoxInaltime.Name = "textBoxInaltime";
+            this.textBoxInaltime.Size = new System.Drawing.Size(100, 20);
+            this.textBoxInaltime.TabIndex = 22;
             // 
-            // textBoxCNP
+            // textBoxMasa
             // 
-            this.textBoxCNP.Location = new System.Drawing.Point(81, 93);
-            this.textBoxCNP.Name = "textBoxCNP";
-            this.textBoxCNP.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCNP.TabIndex = 5;
-            // 
-            // radioButtonSexM
-            // 
-            this.radioButtonSexM.AutoSize = true;
-            this.radioButtonSexM.Location = new System.Drawing.Point(3, 2);
-            this.radioButtonSexM.Name = "radioButtonSexM";
-            this.radioButtonSexM.Size = new System.Drawing.Size(34, 17);
-            this.radioButtonSexM.TabIndex = 12;
-            this.radioButtonSexM.TabStop = true;
-            this.radioButtonSexM.Text = "M";
-            this.radioButtonSexM.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonSexF
-            // 
-            this.radioButtonSexF.AutoSize = true;
-            this.radioButtonSexF.Location = new System.Drawing.Point(44, 2);
-            this.radioButtonSexF.Name = "radioButtonSexF";
-            this.radioButtonSexF.Size = new System.Drawing.Size(31, 17);
-            this.radioButtonSexF.TabIndex = 13;
-            this.radioButtonSexF.TabStop = true;
-            this.radioButtonSexF.Text = "F";
-            this.radioButtonSexF.UseVisualStyleBackColor = true;
-            // 
-            // textBoxTelefon
-            // 
-            this.textBoxTelefon.Location = new System.Drawing.Point(303, 25);
-            this.textBoxTelefon.Name = "textBoxTelefon";
-            this.textBoxTelefon.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTelefon.TabIndex = 15;
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.Location = new System.Drawing.Point(303, 58);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
-            this.textBoxEmail.TabIndex = 16;
-            // 
-            // textBoxCetatenie
-            // 
-            this.textBoxCetatenie.Location = new System.Drawing.Point(303, 90);
-            this.textBoxCetatenie.Name = "textBoxCetatenie";
-            this.textBoxCetatenie.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCetatenie.TabIndex = 17;
-            // 
-            // textBoxStatusSocial
-            // 
-            this.textBoxStatusSocial.Location = new System.Drawing.Point(303, 123);
-            this.textBoxStatusSocial.Name = "textBoxStatusSocial";
-            this.textBoxStatusSocial.Size = new System.Drawing.Size(100, 20);
-            this.textBoxStatusSocial.TabIndex = 18;
-            // 
-            // comboBoxGrupSangvin
-            // 
-            this.comboBoxGrupSangvin.FormattingEnabled = true;
-            this.comboBoxGrupSangvin.Items.AddRange(new object[] {
-            "0",
-            "A",
-            "B",
-            "AB"});
-            this.comboBoxGrupSangvin.Location = new System.Drawing.Point(511, 27);
-            this.comboBoxGrupSangvin.Name = "comboBoxGrupSangvin";
-            this.comboBoxGrupSangvin.Size = new System.Drawing.Size(78, 21);
-            this.comboBoxGrupSangvin.TabIndex = 19;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.radioButtonSexM);
-            this.panel1.Controls.Add(this.radioButtonSexF);
-            this.panel1.Location = new System.Drawing.Point(91, 134);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(79, 22);
-            this.panel1.TabIndex = 19;
+            this.textBoxMasa.Location = new System.Drawing.Point(671, 25);
+            this.textBoxMasa.Name = "textBoxMasa";
+            this.textBoxMasa.Size = new System.Drawing.Size(100, 20);
+            this.textBoxMasa.TabIndex = 21;
             // 
             // panel2
             // 
@@ -369,26 +300,107 @@
             this.radioButtonRHNeg.Text = "-";
             this.radioButtonRHNeg.UseVisualStyleBackColor = true;
             // 
-            // textBoxMasa
+            // panel1
             // 
-            this.textBoxMasa.Location = new System.Drawing.Point(671, 25);
-            this.textBoxMasa.Name = "textBoxMasa";
-            this.textBoxMasa.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMasa.TabIndex = 21;
+            this.panel1.Controls.Add(this.radioButtonSexM);
+            this.panel1.Controls.Add(this.radioButtonSexF);
+            this.panel1.Location = new System.Drawing.Point(91, 134);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(79, 22);
+            this.panel1.TabIndex = 19;
             // 
-            // textBoxInaltime
+            // radioButtonSexM
             // 
-            this.textBoxInaltime.Location = new System.Drawing.Point(671, 58);
-            this.textBoxInaltime.Name = "textBoxInaltime";
-            this.textBoxInaltime.Size = new System.Drawing.Size(100, 20);
-            this.textBoxInaltime.TabIndex = 22;
+            this.radioButtonSexM.AutoSize = true;
+            this.radioButtonSexM.Location = new System.Drawing.Point(3, 2);
+            this.radioButtonSexM.Name = "radioButtonSexM";
+            this.radioButtonSexM.Size = new System.Drawing.Size(34, 17);
+            this.radioButtonSexM.TabIndex = 12;
+            this.radioButtonSexM.TabStop = true;
+            this.radioButtonSexM.Text = "M";
+            this.radioButtonSexM.UseVisualStyleBackColor = true;
             // 
-            // textBoxOcupatie
+            // radioButtonSexF
             // 
-            this.textBoxOcupatie.Location = new System.Drawing.Point(671, 90);
-            this.textBoxOcupatie.Name = "textBoxOcupatie";
-            this.textBoxOcupatie.Size = new System.Drawing.Size(100, 20);
-            this.textBoxOcupatie.TabIndex = 23;
+            this.radioButtonSexF.AutoSize = true;
+            this.radioButtonSexF.Location = new System.Drawing.Point(44, 2);
+            this.radioButtonSexF.Name = "radioButtonSexF";
+            this.radioButtonSexF.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonSexF.TabIndex = 13;
+            this.radioButtonSexF.TabStop = true;
+            this.radioButtonSexF.Text = "F";
+            this.radioButtonSexF.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxGrupSangvin
+            // 
+            this.comboBoxGrupSangvin.FormattingEnabled = true;
+            this.comboBoxGrupSangvin.Items.AddRange(new object[] {
+            "0",
+            "A",
+            "B",
+            "AB"});
+            this.comboBoxGrupSangvin.Location = new System.Drawing.Point(511, 27);
+            this.comboBoxGrupSangvin.Name = "comboBoxGrupSangvin";
+            this.comboBoxGrupSangvin.Size = new System.Drawing.Size(78, 21);
+            this.comboBoxGrupSangvin.TabIndex = 19;
+            // 
+            // textBoxStatusSocial
+            // 
+            this.textBoxStatusSocial.Location = new System.Drawing.Point(303, 123);
+            this.textBoxStatusSocial.Name = "textBoxStatusSocial";
+            this.textBoxStatusSocial.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStatusSocial.TabIndex = 18;
+            // 
+            // textBoxCetatenie
+            // 
+            this.textBoxCetatenie.Location = new System.Drawing.Point(303, 90);
+            this.textBoxCetatenie.Name = "textBoxCetatenie";
+            this.textBoxCetatenie.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCetatenie.TabIndex = 17;
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(303, 58);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
+            this.textBoxEmail.TabIndex = 16;
+            // 
+            // textBoxTelefon
+            // 
+            this.textBoxTelefon.Location = new System.Drawing.Point(303, 25);
+            this.textBoxTelefon.Name = "textBoxTelefon";
+            this.textBoxTelefon.Size = new System.Drawing.Size(100, 20);
+            this.textBoxTelefon.TabIndex = 15;
+            // 
+            // textBoxCNP
+            // 
+            this.textBoxCNP.Location = new System.Drawing.Point(81, 93);
+            this.textBoxCNP.Name = "textBoxCNP";
+            this.textBoxCNP.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCNP.TabIndex = 5;
+            // 
+            // textBoxPrenume
+            // 
+            this.textBoxPrenume.Location = new System.Drawing.Point(81, 58);
+            this.textBoxPrenume.Name = "textBoxPrenume";
+            this.textBoxPrenume.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPrenume.TabIndex = 4;
+            // 
+            // textBoxNume
+            // 
+            this.textBoxNume.Location = new System.Drawing.Point(81, 28);
+            this.textBoxNume.Name = "textBoxNume";
+            this.textBoxNume.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNume.TabIndex = 3;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(45, 93);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(29, 13);
+            this.label19.TabIndex = 2;
+            this.label19.Text = "CNP";
             // 
             // groupBox2
             // 
@@ -441,6 +453,30 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Altele";
             // 
+            // textBoxAntecedenteP
+            // 
+            this.textBoxAntecedenteP.Location = new System.Drawing.Point(553, 63);
+            this.textBoxAntecedenteP.Multiline = true;
+            this.textBoxAntecedenteP.Name = "textBoxAntecedenteP";
+            this.textBoxAntecedenteP.Size = new System.Drawing.Size(230, 154);
+            this.textBoxAntecedenteP.TabIndex = 22;
+            // 
+            // textBoxAntecedenteHC
+            // 
+            this.textBoxAntecedenteHC.Location = new System.Drawing.Point(284, 63);
+            this.textBoxAntecedenteHC.Multiline = true;
+            this.textBoxAntecedenteHC.Name = "textBoxAntecedenteHC";
+            this.textBoxAntecedenteHC.Size = new System.Drawing.Size(230, 154);
+            this.textBoxAntecedenteHC.TabIndex = 21;
+            // 
+            // textBoxAlergii
+            // 
+            this.textBoxAlergii.Location = new System.Drawing.Point(6, 63);
+            this.textBoxAlergii.Multiline = true;
+            this.textBoxAlergii.Name = "textBoxAlergii";
+            this.textBoxAlergii.Size = new System.Drawing.Size(230, 154);
+            this.textBoxAlergii.TabIndex = 20;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -468,30 +504,6 @@
             this.label14.TabIndex = 17;
             this.label14.Text = "Alergii";
             // 
-            // textBoxAlergii
-            // 
-            this.textBoxAlergii.Location = new System.Drawing.Point(6, 63);
-            this.textBoxAlergii.Multiline = true;
-            this.textBoxAlergii.Name = "textBoxAlergii";
-            this.textBoxAlergii.Size = new System.Drawing.Size(230, 154);
-            this.textBoxAlergii.TabIndex = 20;
-            // 
-            // textBoxAntecedenteHC
-            // 
-            this.textBoxAntecedenteHC.Location = new System.Drawing.Point(284, 63);
-            this.textBoxAntecedenteHC.Multiline = true;
-            this.textBoxAntecedenteHC.Name = "textBoxAntecedenteHC";
-            this.textBoxAntecedenteHC.Size = new System.Drawing.Size(230, 154);
-            this.textBoxAntecedenteHC.TabIndex = 21;
-            // 
-            // textBoxAntecedenteP
-            // 
-            this.textBoxAntecedenteP.Location = new System.Drawing.Point(553, 63);
-            this.textBoxAntecedenteP.Multiline = true;
-            this.textBoxAntecedenteP.Name = "textBoxAntecedenteP";
-            this.textBoxAntecedenteP.Size = new System.Drawing.Size(230, 154);
-            this.textBoxAntecedenteP.TabIndex = 22;
-            // 
             // buttonAdauga
             // 
             this.buttonAdauga.Location = new System.Drawing.Point(420, 573);
@@ -511,18 +523,41 @@
             this.button2.Text = "Renunta";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // flowLayoutPanel1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(257, 165);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(264, 20);
-            this.dateTimePicker1.TabIndex = 24;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel1.Controls.Add(this.label6);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(623, 9);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 57);
+            this.flowLayoutPanel1.TabIndex = 24;
+            this.flowLayoutPanel1.Visible = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(54, 54);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(63, 0);
+            this.label6.MaximumSize = new System.Drawing.Size(120, 39);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "label6";
             // 
             // AdaugarePacient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 608);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.buttonAdauga);
             this.Controls.Add(this.groupBox4);
@@ -533,16 +568,19 @@
             this.Text = "AdaugarePacient";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -595,5 +633,8 @@
         private System.Windows.Forms.Button buttonAdauga;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label6;
     }
 }

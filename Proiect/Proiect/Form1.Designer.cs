@@ -39,6 +39,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPageConsultatii = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label24A = new System.Windows.Forms.Label();
             this.btnFinalizareConsultatie = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.grupBox3 = new System.Windows.Forms.GroupBox();
@@ -62,8 +75,8 @@
             this.masaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inaltimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timestampDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
-            this.viewPacientiBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.cDS = new Proiect.CDS();
+            this.viewPacientiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cabinetDataSet6 = new Proiect.CabinetDataSet6();
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioButtonIstoricDescrescator = new System.Windows.Forms.RadioButton();
             this.radioButtonIstoricCrescator = new System.Windows.Forms.RadioButton();
@@ -79,8 +92,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPageRapoarte = new System.Windows.Forms.TabPage();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.CrystalReport21 = new Proiect.CrystalReport2();
             this.tabPageProgramari = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.dataGridViewProgramari = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataProgramareDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,8 +104,7 @@
             this.prenumeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNPDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentariiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.viewProgramariBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.cabinetDataSet31 = new Proiect.CabinetDataSet3();
+            this.viewProgramariBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.radioButtonAfisareAstazi = new System.Windows.Forms.RadioButton();
             this.radioButtonAfisareCustom = new System.Windows.Forms.RadioButton();
@@ -131,48 +146,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cabinetDataSet1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.cabinetDataSet1 = new Proiect.CabinetDataSet();
-            this.viewPacienti4BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewPacienti2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewPacientiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cabinetDataSet = new Proiect.CabinetDataSet();
-            this.viewPacientiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tableAdapterManager = new Proiect.CabinetDataSetTableAdapters.TableAdapterManager();
-            this.viewPacienti2BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cabinetDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewPacientiBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.viewPacienti3BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cabinetDataSet2 = new Proiect.CabinetDataSet();
-            this.viewPacienti3BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.viewPacienti4TableAdapter = new Proiect.CabinetDataSetTableAdapters.ViewPacienti4TableAdapter();
-            this.cabinetDataSet3 = new Proiect.CabinetDataSet();
-            this.cabinetDataSet4 = new Proiect.CabinetDataSet();
-            this.cabinetDataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cabinetDataSet11 = new Proiect.CabinetDataSet1();
-            this.viewProgramariBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewProgramariTableAdapter = new Proiect.CabinetDataSet1TableAdapters.ViewProgramariTableAdapter();
-            this.cabinetDataSet21 = new Proiect.CabinetDataSet2();
-            this.viewProgramariBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.viewProgramariTableAdapter2 = new Proiect.CabinetDataSet2TableAdapters.ViewProgramariTableAdapter();
-            this.viewPacientiTableAdapter = new Proiect.CDSTableAdapters.ViewPacientiTableAdapter();
-            this.cDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewProgramariBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.viewProgramariTableAdapter1 = new Proiect.CDSTableAdapters.ViewProgramariTableAdapter();
-            this.viewProgramariTableAdapter3 = new Proiect.CabinetDataSet3TableAdapters.ViewProgramariTableAdapter();
             this.tabPageAllConsultatii = new System.Windows.Forms.TabPage();
-            this.buttonAdaugareConsultatie = new System.Windows.Forms.Button();
-            this.buttonStergereConsultatie = new System.Windows.Forms.Button();
-            this.cabinetDataSet41 = new Proiect.CabinetDataSet4();
-            this.viewConsultatiiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.viewConsultatiiTableAdapter = new Proiect.CabinetDataSet4TableAdapters.ViewConsultatiiTableAdapter();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.cabinetDataSet5 = new Proiect.CabinetDataSet5();
-            this.viewConsultatiiBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.viewConsultatiiTableAdapter1 = new Proiect.CabinetDataSet5TableAdapters.ViewConsultatiiTableAdapter();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNPDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -181,76 +160,44 @@
             this.concediuMedicalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.simptomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prescriptiiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label24A = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.viewConsultatiiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonStergereConsultatie = new System.Windows.Forms.Button();
+            this.buttonAdaugareConsultatie = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.viewPacientiTableAdapter = new Proiect.CabinetDataSet6TableAdapters.ViewPacientiTableAdapter();
+            this.viewProgramariTableAdapter = new Proiect.CabinetDataSet6TableAdapters.ViewProgramariTableAdapter();
+            this.viewConsultatiiTableAdapter = new Proiect.CabinetDataSet6TableAdapters.ViewConsultatiiTableAdapter();
             this.tabControl1.SuspendLayout();
             this.tabPageConectare.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPageConsultatii.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.grupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPagePacienti.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cDS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet6)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPageRapoarte.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.tabPageProgramari.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProgramari)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabPageEditarePacient.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.tabPageAllConsultatii.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewConsultatiiBindingSource)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1BindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti4BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti2BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti2BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1BindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cDSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource1)).BeginInit();
-            this.tabPageAllConsultatii.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet41)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewConsultatiiBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewConsultatiiBindingSource1)).BeginInit();
-            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -371,6 +318,124 @@
             this.tabPageConsultatii.Text = "Adaugare Consultatie";
             this.tabPageConsultatii.UseVisualStyleBackColor = true;
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.textBox14);
+            this.panel6.Controls.Add(this.label23);
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Controls.Add(this.listBox1);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Location = new System.Drawing.Point(649, 6);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(476, 551);
+            this.panel6.TabIndex = 8;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(230, 36);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 20);
+            this.textBox14.TabIndex = 4;
+            this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged_1);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(186, 39);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(38, 13);
+            this.label23.TabIndex = 3;
+            this.label23.Text = "Filtrare";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(382, 493);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Selectare";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(34, 65);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(438, 407);
+            this.listBox1.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(31, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(101, 13);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Selectati un pacient";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(923, 21);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 49);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Selectare pacient";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(102, 78);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(0, 13);
+            this.label30.TabIndex = 13;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(101, 50);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 13);
+            this.label29.TabIndex = 12;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(99, 23);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(0, 13);
+            this.label28.TabIndex = 11;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(48, 76);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(29, 13);
+            this.label27.TabIndex = 10;
+            this.label27.Text = "CNP";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(45, 50);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(49, 13);
+            this.label24.TabIndex = 9;
+            this.label24.Text = "Prenume";
+            // 
+            // label24A
+            // 
+            this.label24A.AutoSize = true;
+            this.label24A.Location = new System.Drawing.Point(45, 23);
+            this.label24A.Name = "label24A";
+            this.label24A.Size = new System.Drawing.Size(35, 13);
+            this.label24A.TabIndex = 8;
+            this.label24A.Text = "Nume";
+            // 
             // btnFinalizareConsultatie
             // 
             this.btnFinalizareConsultatie.Location = new System.Drawing.Point(780, 23);
@@ -474,7 +539,7 @@
             this.masaDataGridViewTextBoxColumn,
             this.inaltimeDataGridViewTextBoxColumn,
             this.timestampDataGridViewImageColumn});
-            this.dataGridView1.DataSource = this.viewPacientiBindingSource3;
+            this.dataGridView1.DataSource = this.viewPacientiBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(206, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -572,15 +637,15 @@
             this.timestampDataGridViewImageColumn.Name = "timestampDataGridViewImageColumn";
             this.timestampDataGridViewImageColumn.ReadOnly = true;
             // 
-            // viewPacientiBindingSource3
+            // viewPacientiBindingSource
             // 
-            this.viewPacientiBindingSource3.DataMember = "ViewPacienti";
-            this.viewPacientiBindingSource3.DataSource = this.cDS;
+            this.viewPacientiBindingSource.DataMember = "ViewPacienti";
+            this.viewPacientiBindingSource.DataSource = this.cabinetDataSet6;
             // 
-            // cDS
+            // cabinetDataSet6
             // 
-            this.cDS.DataSetName = "CDS";
-            this.cDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.cabinetDataSet6.DataSetName = "CabinetDataSet6";
+            this.cabinetDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // panel1
             // 
@@ -740,27 +805,39 @@
             // 
             // tabPageRapoarte
             // 
-            this.tabPageRapoarte.Controls.Add(this.crystalReportViewer1);
+            this.tabPageRapoarte.Controls.Add(this.panel7);
             this.tabPageRapoarte.Location = new System.Drawing.Point(4, 22);
             this.tabPageRapoarte.Name = "tabPageRapoarte";
             this.tabPageRapoarte.Size = new System.Drawing.Size(1125, 561);
             this.tabPageRapoarte.TabIndex = 3;
             this.tabPageRapoarte.Text = "Rapoarte";
             this.tabPageRapoarte.UseVisualStyleBackColor = true;
+
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.crystalReportViewer1);
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1122, 558);
+            this.panel7.TabIndex = 0;
             // 
             // crystalReportViewer1
             // 
-            this.crystalReportViewer1.ActiveViewIndex = -1;
+            this.crystalReportViewer1.ActiveViewIndex = 0;
             this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1125, 561);
+            this.crystalReportViewer1.ReportSource = this.CrystalReport21;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1122, 558);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // tabPageProgramari
             // 
+            this.tabPageProgramari.Controls.Add(this.button4);
             this.tabPageProgramari.Controls.Add(this.dataGridViewProgramari);
             this.tabPageProgramari.Controls.Add(this.panel2);
             this.tabPageProgramari.Controls.Add(this.buttonStergereProgramare);
@@ -771,6 +848,16 @@
             this.tabPageProgramari.TabIndex = 4;
             this.tabPageProgramari.Text = "Programari";
             this.tabPageProgramari.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(180, 16);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(78, 23);
+            this.button4.TabIndex = 18;
+            this.button4.Text = "Improspatare";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dataGridViewProgramari
             // 
@@ -783,7 +870,7 @@
             this.prenumeDataGridViewTextBoxColumn1,
             this.cNPDataGridViewTextBoxColumn1,
             this.comentariiDataGridViewTextBoxColumn});
-            this.dataGridViewProgramari.DataSource = this.viewProgramariBindingSource3;
+            this.dataGridViewProgramari.DataSource = this.viewProgramariBindingSource;
             this.dataGridViewProgramari.Location = new System.Drawing.Point(371, 60);
             this.dataGridViewProgramari.Name = "dataGridViewProgramari";
             this.dataGridViewProgramari.ReadOnly = true;
@@ -795,46 +882,47 @@
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dataProgramareDataGridViewTextBoxColumn
             // 
             this.dataProgramareDataGridViewTextBoxColumn.DataPropertyName = "DataProgramare";
             this.dataProgramareDataGridViewTextBoxColumn.HeaderText = "DataProgramare";
             this.dataProgramareDataGridViewTextBoxColumn.Name = "dataProgramareDataGridViewTextBoxColumn";
+            this.dataProgramareDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // numeDataGridViewTextBoxColumn1
             // 
             this.numeDataGridViewTextBoxColumn1.DataPropertyName = "Nume";
             this.numeDataGridViewTextBoxColumn1.HeaderText = "Nume";
             this.numeDataGridViewTextBoxColumn1.Name = "numeDataGridViewTextBoxColumn1";
+            this.numeDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // prenumeDataGridViewTextBoxColumn1
             // 
             this.prenumeDataGridViewTextBoxColumn1.DataPropertyName = "Prenume";
             this.prenumeDataGridViewTextBoxColumn1.HeaderText = "Prenume";
             this.prenumeDataGridViewTextBoxColumn1.Name = "prenumeDataGridViewTextBoxColumn1";
+            this.prenumeDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // cNPDataGridViewTextBoxColumn1
             // 
             this.cNPDataGridViewTextBoxColumn1.DataPropertyName = "CNP";
             this.cNPDataGridViewTextBoxColumn1.HeaderText = "CNP";
             this.cNPDataGridViewTextBoxColumn1.Name = "cNPDataGridViewTextBoxColumn1";
+            this.cNPDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // comentariiDataGridViewTextBoxColumn
             // 
             this.comentariiDataGridViewTextBoxColumn.DataPropertyName = "Comentarii";
             this.comentariiDataGridViewTextBoxColumn.HeaderText = "Comentarii";
             this.comentariiDataGridViewTextBoxColumn.Name = "comentariiDataGridViewTextBoxColumn";
+            this.comentariiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // viewProgramariBindingSource3
+            // viewProgramariBindingSource
             // 
-            this.viewProgramariBindingSource3.DataMember = "ViewProgramari";
-            this.viewProgramariBindingSource3.DataSource = this.cabinetDataSet31;
-            // 
-            // cabinetDataSet31
-            // 
-            this.cabinetDataSet31.DataSetName = "CabinetDataSet3";
-            this.cabinetDataSet31.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.viewProgramariBindingSource.DataMember = "ViewProgramari";
+            this.viewProgramariBindingSource.DataSource = this.cabinetDataSet6;
             // 
             // panel2
             // 
@@ -933,7 +1021,7 @@
             // 
             // buttonStergereProgramare
             // 
-            this.buttonStergereProgramare.Location = new System.Drawing.Point(179, 17);
+            this.buttonStergereProgramare.Location = new System.Drawing.Point(98, 17);
             this.buttonStergereProgramare.Name = "buttonStergereProgramare";
             this.buttonStergereProgramare.Size = new System.Drawing.Size(75, 23);
             this.buttonStergereProgramare.TabIndex = 2;
@@ -1236,6 +1324,159 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Nume";
             // 
+            // tabPageAllConsultatii
+            // 
+            this.tabPageAllConsultatii.Controls.Add(this.button3);
+            this.tabPageAllConsultatii.Controls.Add(this.label26);
+            this.tabPageAllConsultatii.Controls.Add(this.textBox13);
+            this.tabPageAllConsultatii.Controls.Add(this.label25);
+            this.tabPageAllConsultatii.Controls.Add(this.dataGridView2);
+            this.tabPageAllConsultatii.Controls.Add(this.buttonStergereConsultatie);
+            this.tabPageAllConsultatii.Controls.Add(this.buttonAdaugareConsultatie);
+            this.tabPageAllConsultatii.Location = new System.Drawing.Point(4, 22);
+            this.tabPageAllConsultatii.Name = "tabPageAllConsultatii";
+            this.tabPageAllConsultatii.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAllConsultatii.Size = new System.Drawing.Size(1125, 561);
+            this.tabPageAllConsultatii.TabIndex = 6;
+            this.tabPageAllConsultatii.Text = "Consultatii";
+            this.tabPageAllConsultatii.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(21, 210);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(133, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Reimprospatare Date";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label26
+            // 
+            this.label26.Location = new System.Drawing.Point(18, 103);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(136, 45);
+            this.label26.TabIndex = 6;
+            this.label26.Text = "Selectati un pacient din tabelul din dreapta pentru a putea efectua operatiunile";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(21, 70);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(133, 20);
+            this.textBox13.TabIndex = 5;
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(21, 54);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(100, 13);
+            this.label25.TabIndex = 4;
+            this.label25.Text = "Cautare dupa nume";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataDataGridViewTextBoxColumn,
+            this.cNPDataGridViewTextBoxColumn2,
+            this.numeDataGridViewTextBoxColumn2,
+            this.prenumeDataGridViewTextBoxColumn2,
+            this.diagnosticDataGridViewTextBoxColumn,
+            this.concediuMedicalDataGridViewTextBoxColumn,
+            this.simptomeDataGridViewTextBoxColumn,
+            this.prescriptiiDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.viewConsultatiiBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(175, 6);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(843, 549);
+            this.dataGridView2.TabIndex = 3;
+            // 
+            // dataDataGridViewTextBoxColumn
+            // 
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
+            this.dataDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cNPDataGridViewTextBoxColumn2
+            // 
+            this.cNPDataGridViewTextBoxColumn2.DataPropertyName = "CNP";
+            this.cNPDataGridViewTextBoxColumn2.HeaderText = "CNP";
+            this.cNPDataGridViewTextBoxColumn2.Name = "cNPDataGridViewTextBoxColumn2";
+            this.cNPDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // numeDataGridViewTextBoxColumn2
+            // 
+            this.numeDataGridViewTextBoxColumn2.DataPropertyName = "Nume";
+            this.numeDataGridViewTextBoxColumn2.HeaderText = "Nume";
+            this.numeDataGridViewTextBoxColumn2.Name = "numeDataGridViewTextBoxColumn2";
+            this.numeDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // prenumeDataGridViewTextBoxColumn2
+            // 
+            this.prenumeDataGridViewTextBoxColumn2.DataPropertyName = "Prenume";
+            this.prenumeDataGridViewTextBoxColumn2.HeaderText = "Prenume";
+            this.prenumeDataGridViewTextBoxColumn2.Name = "prenumeDataGridViewTextBoxColumn2";
+            this.prenumeDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // diagnosticDataGridViewTextBoxColumn
+            // 
+            this.diagnosticDataGridViewTextBoxColumn.DataPropertyName = "Diagnostic";
+            this.diagnosticDataGridViewTextBoxColumn.HeaderText = "Diagnostic";
+            this.diagnosticDataGridViewTextBoxColumn.Name = "diagnosticDataGridViewTextBoxColumn";
+            this.diagnosticDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // concediuMedicalDataGridViewTextBoxColumn
+            // 
+            this.concediuMedicalDataGridViewTextBoxColumn.DataPropertyName = "ConcediuMedical";
+            this.concediuMedicalDataGridViewTextBoxColumn.HeaderText = "ConcediuMedical";
+            this.concediuMedicalDataGridViewTextBoxColumn.Name = "concediuMedicalDataGridViewTextBoxColumn";
+            this.concediuMedicalDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // simptomeDataGridViewTextBoxColumn
+            // 
+            this.simptomeDataGridViewTextBoxColumn.DataPropertyName = "Simptome";
+            this.simptomeDataGridViewTextBoxColumn.HeaderText = "Simptome";
+            this.simptomeDataGridViewTextBoxColumn.Name = "simptomeDataGridViewTextBoxColumn";
+            this.simptomeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prescriptiiDataGridViewTextBoxColumn
+            // 
+            this.prescriptiiDataGridViewTextBoxColumn.DataPropertyName = "Prescriptii";
+            this.prescriptiiDataGridViewTextBoxColumn.HeaderText = "Prescriptii";
+            this.prescriptiiDataGridViewTextBoxColumn.Name = "prescriptiiDataGridViewTextBoxColumn";
+            this.prescriptiiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // viewConsultatiiBindingSource
+            // 
+            this.viewConsultatiiBindingSource.DataMember = "ViewConsultatii";
+            this.viewConsultatiiBindingSource.DataSource = this.cabinetDataSet6;
+            // 
+            // buttonStergereConsultatie
+            // 
+            this.buttonStergereConsultatie.Location = new System.Drawing.Point(21, 180);
+            this.buttonStergereConsultatie.Name = "buttonStergereConsultatie";
+            this.buttonStergereConsultatie.Size = new System.Drawing.Size(133, 23);
+            this.buttonStergereConsultatie.TabIndex = 1;
+            this.buttonStergereConsultatie.Text = "Stergere";
+            this.buttonStergereConsultatie.UseVisualStyleBackColor = true;
+            this.buttonStergereConsultatie.Click += new System.EventHandler(this.buttonStergereConsultatie_Click);
+            // 
+            // buttonAdaugareConsultatie
+            // 
+            this.buttonAdaugareConsultatie.Location = new System.Drawing.Point(21, 151);
+            this.buttonAdaugareConsultatie.Name = "buttonAdaugareConsultatie";
+            this.buttonAdaugareConsultatie.Size = new System.Drawing.Size(133, 23);
+            this.buttonAdaugareConsultatie.TabIndex = 0;
+            this.buttonAdaugareConsultatie.Text = "Adaugare";
+            this.buttonAdaugareConsultatie.UseVisualStyleBackColor = true;
+            this.buttonAdaugareConsultatie.Click += new System.EventHandler(this.buttonAdaugareConsultatie_Click);
+            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.DarkTurquoise;
@@ -1265,428 +1506,23 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "label3";
             // 
-            // cabinetDataSet1BindingSource2
+            // viewPacientiTableAdapter
             // 
-            this.cabinetDataSet1BindingSource2.DataSource = this.cabinetDataSet1;
-            this.cabinetDataSet1BindingSource2.Position = 0;
-            // 
-            // cabinetDataSet1
-            // 
-            this.cabinetDataSet1.DataSetName = "CabinetDataSet";
-            this.cabinetDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewPacienti4BindingSource
-            // 
-            this.viewPacienti4BindingSource.DataMember = "ViewPacienti4";
-            this.viewPacienti4BindingSource.DataSource = this.cabinetDataSet1;
-            // 
-            // viewPacienti2BindingSource
-            // 
-            this.viewPacienti2BindingSource.DataMember = "ViewPacienti2";
-            this.viewPacienti2BindingSource.DataSource = this.cabinetDataSet1;
-            // 
-            // viewPacientiBindingSource
-            // 
-            this.viewPacientiBindingSource.DataMember = "ViewPacienti";
-            this.viewPacientiBindingSource.DataSource = this.cabinetDataSet;
-            // 
-            // cabinetDataSet
-            // 
-            this.cabinetDataSet.DataSetName = "CabinetDataSet";
-            this.cabinetDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewPacientiBindingSource1
-            // 
-            this.viewPacientiBindingSource1.DataMember = "ViewPacienti";
-            this.viewPacientiBindingSource1.DataSource = this.cabinetDataSet1;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.ConsultatiiTableAdapter = null;
-            this.tableAdapterManager.DoctorTableAdapter = null;
-            this.tableAdapterManager.PacientTableAdapter = null;
-            this.tableAdapterManager.SpecializariTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = Proiect.CabinetDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // viewPacienti2BindingSource1
-            // 
-            this.viewPacienti2BindingSource1.DataMember = "ViewPacienti2";
-            this.viewPacienti2BindingSource1.DataSource = this.cabinetDataSet;
-            // 
-            // cabinetDataSet1BindingSource
-            // 
-            this.cabinetDataSet1BindingSource.DataSource = this.cabinetDataSet1;
-            this.cabinetDataSet1BindingSource.Position = 0;
-            // 
-            // viewPacientiBindingSource2
-            // 
-            this.viewPacientiBindingSource2.DataMember = "ViewPacienti";
-            this.viewPacientiBindingSource2.DataSource = this.cabinetDataSet1;
-            // 
-            // viewPacienti3BindingSource
-            // 
-            this.viewPacienti3BindingSource.DataMember = "ViewPacienti3";
-            this.viewPacienti3BindingSource.DataSource = this.cabinetDataSet1;
-            // 
-            // cabinetDataSet2
-            // 
-            this.cabinetDataSet2.DataSetName = "CabinetDataSet";
-            this.cabinetDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewPacienti3BindingSource1
-            // 
-            this.viewPacienti3BindingSource1.DataMember = "ViewPacienti3";
-            this.viewPacienti3BindingSource1.DataSource = this.cabinetDataSet2;
-            // 
-            // viewPacienti4TableAdapter
-            // 
-            this.viewPacienti4TableAdapter.ClearBeforeFill = true;
-            // 
-            // cabinetDataSet3
-            // 
-            this.cabinetDataSet3.DataSetName = "CabinetDataSet";
-            this.cabinetDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cabinetDataSet4
-            // 
-            this.cabinetDataSet4.DataSetName = "CabinetDataSet";
-            this.cabinetDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cabinetDataSet1BindingSource1
-            // 
-            this.cabinetDataSet1BindingSource1.DataSource = this.cabinetDataSet1;
-            this.cabinetDataSet1BindingSource1.Position = 0;
-            // 
-            // cabinetDataSet11
-            // 
-            this.cabinetDataSet11.DataSetName = "CabinetDataSet1";
-            this.cabinetDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewProgramariBindingSource
-            // 
-            this.viewProgramariBindingSource.DataMember = "ViewProgramari";
-            this.viewProgramariBindingSource.DataSource = this.cabinetDataSet11;
+            this.viewPacientiTableAdapter.ClearBeforeFill = true;
             // 
             // viewProgramariTableAdapter
             // 
             this.viewProgramariTableAdapter.ClearBeforeFill = true;
             // 
-            // cabinetDataSet21
-            // 
-            this.cabinetDataSet21.DataSetName = "CabinetDataSet2";
-            this.cabinetDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewProgramariBindingSource2
-            // 
-            this.viewProgramariBindingSource2.DataMember = "ViewProgramari";
-            this.viewProgramariBindingSource2.DataSource = this.cabinetDataSet21;
-            // 
-            // viewProgramariTableAdapter2
-            // 
-            this.viewProgramariTableAdapter2.ClearBeforeFill = true;
-            // 
-            // viewPacientiTableAdapter
-            // 
-            this.viewPacientiTableAdapter.ClearBeforeFill = true;
-            // 
-            // cDSBindingSource
-            // 
-            this.cDSBindingSource.DataSource = this.cDS;
-            this.cDSBindingSource.Position = 0;
-            // 
-            // viewProgramariBindingSource1
-            // 
-            this.viewProgramariBindingSource1.DataMember = "ViewProgramari";
-            this.viewProgramariBindingSource1.DataSource = this.cDS;
-            // 
-            // viewProgramariTableAdapter1
-            // 
-            this.viewProgramariTableAdapter1.ClearBeforeFill = true;
-            // 
-            // viewProgramariTableAdapter3
-            // 
-            this.viewProgramariTableAdapter3.ClearBeforeFill = true;
-            // 
-            // tabPageAllConsultatii
-            // 
-            this.tabPageAllConsultatii.Controls.Add(this.label26);
-            this.tabPageAllConsultatii.Controls.Add(this.textBox13);
-            this.tabPageAllConsultatii.Controls.Add(this.label25);
-            this.tabPageAllConsultatii.Controls.Add(this.dataGridView2);
-            this.tabPageAllConsultatii.Controls.Add(this.buttonStergereConsultatie);
-            this.tabPageAllConsultatii.Controls.Add(this.buttonAdaugareConsultatie);
-            this.tabPageAllConsultatii.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAllConsultatii.Name = "tabPageAllConsultatii";
-            this.tabPageAllConsultatii.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAllConsultatii.Size = new System.Drawing.Size(1125, 561);
-            this.tabPageAllConsultatii.TabIndex = 6;
-            this.tabPageAllConsultatii.Text = "Consultatii";
-            this.tabPageAllConsultatii.UseVisualStyleBackColor = true;
-            // 
-            // buttonAdaugareConsultatie
-            // 
-            this.buttonAdaugareConsultatie.Location = new System.Drawing.Point(21, 151);
-            this.buttonAdaugareConsultatie.Name = "buttonAdaugareConsultatie";
-            this.buttonAdaugareConsultatie.Size = new System.Drawing.Size(133, 23);
-            this.buttonAdaugareConsultatie.TabIndex = 0;
-            this.buttonAdaugareConsultatie.Text = "Adaugare";
-            this.buttonAdaugareConsultatie.UseVisualStyleBackColor = true;
-            this.buttonAdaugareConsultatie.Click += new System.EventHandler(this.buttonAdaugareConsultatie_Click);
-            // 
-            // buttonStergereConsultatie
-            // 
-            this.buttonStergereConsultatie.Location = new System.Drawing.Point(21, 180);
-            this.buttonStergereConsultatie.Name = "buttonStergereConsultatie";
-            this.buttonStergereConsultatie.Size = new System.Drawing.Size(133, 23);
-            this.buttonStergereConsultatie.TabIndex = 1;
-            this.buttonStergereConsultatie.Text = "Stergere";
-            this.buttonStergereConsultatie.UseVisualStyleBackColor = true;
-            this.buttonStergereConsultatie.Click += new System.EventHandler(this.buttonStergereConsultatie_Click);
-            // 
-            // cabinetDataSet41
-            // 
-            this.cabinetDataSet41.DataSetName = "CabinetDataSet4";
-            this.cabinetDataSet41.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewConsultatiiBindingSource
-            // 
-            this.viewConsultatiiBindingSource.DataMember = "ViewConsultatii";
-            this.viewConsultatiiBindingSource.DataSource = this.cabinetDataSet41;
-            // 
             // viewConsultatiiTableAdapter
             // 
             this.viewConsultatiiTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataDataGridViewTextBoxColumn,
-            this.cNPDataGridViewTextBoxColumn2,
-            this.numeDataGridViewTextBoxColumn2,
-            this.prenumeDataGridViewTextBoxColumn2,
-            this.diagnosticDataGridViewTextBoxColumn,
-            this.concediuMedicalDataGridViewTextBoxColumn,
-            this.simptomeDataGridViewTextBoxColumn,
-            this.prescriptiiDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.viewConsultatiiBindingSource1;
-            this.dataGridView2.Location = new System.Drawing.Point(175, 6);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(843, 549);
-            this.dataGridView2.TabIndex = 3;
-            // 
-            // cabinetDataSet5
-            // 
-            this.cabinetDataSet5.DataSetName = "CabinetDataSet5";
-            this.cabinetDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // viewConsultatiiBindingSource1
-            // 
-            this.viewConsultatiiBindingSource1.DataMember = "ViewConsultatii";
-            this.viewConsultatiiBindingSource1.DataSource = this.cabinetDataSet5;
-            // 
-            // viewConsultatiiTableAdapter1
-            // 
-            this.viewConsultatiiTableAdapter1.ClearBeforeFill = true;
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            // 
-            // cNPDataGridViewTextBoxColumn2
-            // 
-            this.cNPDataGridViewTextBoxColumn2.DataPropertyName = "CNP";
-            this.cNPDataGridViewTextBoxColumn2.HeaderText = "CNP";
-            this.cNPDataGridViewTextBoxColumn2.Name = "cNPDataGridViewTextBoxColumn2";
-            // 
-            // numeDataGridViewTextBoxColumn2
-            // 
-            this.numeDataGridViewTextBoxColumn2.DataPropertyName = "Nume";
-            this.numeDataGridViewTextBoxColumn2.HeaderText = "Nume";
-            this.numeDataGridViewTextBoxColumn2.Name = "numeDataGridViewTextBoxColumn2";
-            // 
-            // prenumeDataGridViewTextBoxColumn2
-            // 
-            this.prenumeDataGridViewTextBoxColumn2.DataPropertyName = "Prenume";
-            this.prenumeDataGridViewTextBoxColumn2.HeaderText = "Prenume";
-            this.prenumeDataGridViewTextBoxColumn2.Name = "prenumeDataGridViewTextBoxColumn2";
-            // 
-            // diagnosticDataGridViewTextBoxColumn
-            // 
-            this.diagnosticDataGridViewTextBoxColumn.DataPropertyName = "Diagnostic";
-            this.diagnosticDataGridViewTextBoxColumn.HeaderText = "Diagnostic";
-            this.diagnosticDataGridViewTextBoxColumn.Name = "diagnosticDataGridViewTextBoxColumn";
-            // 
-            // concediuMedicalDataGridViewTextBoxColumn
-            // 
-            this.concediuMedicalDataGridViewTextBoxColumn.DataPropertyName = "ConcediuMedical";
-            this.concediuMedicalDataGridViewTextBoxColumn.HeaderText = "ConcediuMedical";
-            this.concediuMedicalDataGridViewTextBoxColumn.Name = "concediuMedicalDataGridViewTextBoxColumn";
-            this.concediuMedicalDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // simptomeDataGridViewTextBoxColumn
-            // 
-            this.simptomeDataGridViewTextBoxColumn.DataPropertyName = "Simptome";
-            this.simptomeDataGridViewTextBoxColumn.HeaderText = "Simptome";
-            this.simptomeDataGridViewTextBoxColumn.Name = "simptomeDataGridViewTextBoxColumn";
-            // 
-            // prescriptiiDataGridViewTextBoxColumn
-            // 
-            this.prescriptiiDataGridViewTextBoxColumn.DataPropertyName = "Prescriptii";
-            this.prescriptiiDataGridViewTextBoxColumn.HeaderText = "Prescriptii";
-            this.prescriptiiDataGridViewTextBoxColumn.Name = "prescriptiiDataGridViewTextBoxColumn";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(21, 54);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(100, 13);
-            this.label25.TabIndex = 4;
-            this.label25.Text = "Cautare dupa nume";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(21, 70);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(133, 20);
-            this.textBox13.TabIndex = 5;
-            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
-            // 
-            // label26
-            // 
-            this.label26.Location = new System.Drawing.Point(18, 103);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(136, 45);
-            this.label26.TabIndex = 6;
-            this.label26.Text = "Selectati un pacient din tabelul din dreapta pentru a putea efectua operatiunile";
-            // 
-            // label24A
-            // 
-            this.label24A.AutoSize = true;
-            this.label24A.Location = new System.Drawing.Point(45, 23);
-            this.label24A.Name = "label24A";
-            this.label24A.Size = new System.Drawing.Size(35, 13);
-            this.label24A.TabIndex = 8;
-            this.label24A.Text = "Nume";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(45, 50);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(49, 13);
-            this.label24.TabIndex = 9;
-            this.label24.Text = "Prenume";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(48, 76);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(29, 13);
-            this.label27.TabIndex = 10;
-            this.label27.Text = "CNP";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(99, 23);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(0, 13);
-            this.label28.TabIndex = 11;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(101, 50);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 13);
-            this.label29.TabIndex = 12;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(102, 78);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(0, 13);
-            this.label30.TabIndex = 13;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(923, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 49);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Selectare pacient";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.textBox14);
-            this.panel6.Controls.Add(this.label23);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Controls.Add(this.listBox1);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Location = new System.Drawing.Point(649, 6);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(476, 551);
-            this.panel6.TabIndex = 8;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(230, 36);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 4;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(186, 39);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(38, 13);
-            this.label23.TabIndex = 3;
-            this.label23.Text = "Filtrare";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(382, 493);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Selectare";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(34, 65);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(438, 407);
-            this.listBox1.TabIndex = 1;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 39);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 13);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Selectati un pacient";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1148, 623);
+            this.ClientSize = new System.Drawing.Size(1148, 619);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
@@ -1698,6 +1534,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPageConsultatii.ResumeLayout(false);
             this.tabPageConsultatii.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.grupBox3.ResumeLayout(false);
             this.grupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1706,15 +1544,15 @@
             this.groupBox1.PerformLayout();
             this.tabPagePacienti.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cDS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet6)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPageRapoarte.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.tabPageProgramari.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProgramari)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPageEditarePacient.ResumeLayout(false);
@@ -1726,40 +1564,13 @@
             this.groupBox3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.tabPageAllConsultatii.ResumeLayout(false);
+            this.tabPageAllConsultatii.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewConsultatiiBindingSource)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1BindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti4BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti2BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti2BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacientiBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewPacienti3BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet1BindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cDSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewProgramariBindingSource1)).EndInit();
-            this.tabPageAllConsultatii.ResumeLayout(false);
-            this.tabPageAllConsultatii.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet41)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewConsultatiiBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cabinetDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewConsultatiiBindingSource1)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1784,15 +1595,6 @@
         private System.Windows.Forms.TabPage tabPageProgramari;
         private System.Windows.Forms.Button buttonStergereProgramare;
         private System.Windows.Forms.Button btnAdaugareProgramare;
-        private CabinetDataSet cabinetDataSet;
-        private System.Windows.Forms.BindingSource viewPacientiBindingSource;
-        private CabinetDataSet cabinetDataSet1;
-        private System.Windows.Forms.BindingSource viewPacientiBindingSource1;
-        private System.Windows.Forms.BindingSource viewPacienti2BindingSource;
-        private CabinetDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingSource viewPacienti2BindingSource1;
-        private System.Windows.Forms.BindingSource cabinetDataSet1BindingSource;
-        private System.Windows.Forms.BindingSource viewPacientiBindingSource2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton radioButtonIstoricDescrescator;
         private System.Windows.Forms.RadioButton radioButtonIstoricCrescator;
@@ -1807,25 +1609,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.BindingSource viewPacienti3BindingSource;
-        private CabinetDataSet cabinetDataSet2;
-        private System.Windows.Forms.BindingSource viewPacienti3BindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource viewPacienti4BindingSource;
-        private CabinetDataSetTableAdapters.ViewPacienti4TableAdapter viewPacienti4TableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNPDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataNasteriiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nrTelefonDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statutSocialDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adresaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn grupSangvinDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn masaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn inaltimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn timestampDataGridViewImageColumn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RadioButton radioButtonAfisareAstazi;
         private System.Windows.Forms.RadioButton radioButtonAfisareCustom;
@@ -1835,14 +1619,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private CabinetDataSet cabinetDataSet3;
-        private CabinetDataSet cabinetDataSet4;
-        private System.Windows.Forms.BindingSource cabinetDataSet1BindingSource2;
-        private System.Windows.Forms.BindingSource cabinetDataSet1BindingSource1;
-        private CDS cDS;
-        private System.Windows.Forms.BindingSource viewPacientiBindingSource3;
-        private CDSTableAdapters.ViewPacientiTableAdapter viewPacientiTableAdapter;
         private System.Windows.Forms.Button btnFinalizareConsultatie;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.GroupBox grupBox3;
@@ -1881,45 +1657,13 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.BindingSource cDSBindingSource;
-        private CabinetDataSet1 cabinetDataSet11;
-        private System.Windows.Forms.BindingSource viewProgramariBindingSource;
-        private CabinetDataSet1TableAdapters.ViewProgramariTableAdapter viewProgramariTableAdapter;
-        private System.Windows.Forms.BindingSource viewProgramariBindingSource1;
-        private CDSTableAdapters.ViewProgramariTableAdapter viewProgramariTableAdapter1;
-        private CabinetDataSet2 cabinetDataSet21;
-        private System.Windows.Forms.BindingSource viewProgramariBindingSource2;
-        private CabinetDataSet2TableAdapters.ViewProgramariTableAdapter viewProgramariTableAdapter2;
         private System.Windows.Forms.DataGridView dataGridViewProgramari;
-        private CabinetDataSet3 cabinetDataSet31;
-        private System.Windows.Forms.BindingSource viewProgramariBindingSource3;
-        private CabinetDataSet3TableAdapters.ViewProgramariTableAdapter viewProgramariTableAdapter3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataProgramareDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNPDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn comentariiDataGridViewTextBoxColumn;
         private System.Windows.Forms.TabPage tabPageAllConsultatii;
         private System.Windows.Forms.Button buttonStergereConsultatie;
         private System.Windows.Forms.Button buttonAdaugareConsultatie;
-        private CabinetDataSet4 cabinetDataSet41;
-        private System.Windows.Forms.BindingSource viewConsultatiiBindingSource;
-        private CabinetDataSet4TableAdapters.ViewConsultatiiTableAdapter viewConsultatiiTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private CabinetDataSet5 cabinetDataSet5;
-        private System.Windows.Forms.BindingSource viewConsultatiiBindingSource1;
-        private CabinetDataSet5TableAdapters.ViewConsultatiiTableAdapter viewConsultatiiTableAdapter1;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cNPDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diagnosticDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn concediuMedicalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn simptomeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prescriptiiDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label24A;
         private System.Windows.Forms.Label label28;
@@ -1934,6 +1678,45 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label11;
+        private CabinetDataSet6 cabinetDataSet6;
+        private System.Windows.Forms.BindingSource viewPacientiBindingSource;
+        private CabinetDataSet6TableAdapters.ViewPacientiTableAdapter viewPacientiTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataNasteriiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nrTelefonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statutSocialDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn grupSangvinDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn masaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn inaltimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn timestampDataGridViewImageColumn;
+        private System.Windows.Forms.BindingSource viewProgramariBindingSource;
+        private CabinetDataSet6TableAdapters.ViewProgramariTableAdapter viewProgramariTableAdapter;
+        private System.Windows.Forms.BindingSource viewConsultatiiBindingSource;
+        private CabinetDataSet6TableAdapters.ViewConsultatiiTableAdapter viewConsultatiiTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diagnosticDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn concediuMedicalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn simptomeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prescriptiiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataProgramareDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenumeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comentariiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Panel panel7;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private CrystalReport2 CrystalReport21;
     }
 }
 

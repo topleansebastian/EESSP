@@ -1,4 +1,5 @@
-﻿using Proiect.Components;
+﻿using CrystalDecisions.CrystalReports.Engine;
+using Proiect.Components;
 using Proiect.Forms;
 using System;
 using System.Collections.Generic;
@@ -58,10 +59,10 @@ namespace Proiect
                         }
                         else
                         {
-                            this.tabControl1.TabPages.Remove(this.tabPageConectare);
+                            this.tabControl1.TabPages.RemoveByKey("tabPageConectare");
                             foreach(TabPage t in tabs)
                             {
-                                if(t.Name != "tabPageConectare" || t.Name != "tabPageEditarePacient" || t.Name != "tabPageConsultatii" || t.Name != "tabPageConsultatii")
+                                if(t.Name != "tabPageConectare" && t.Name != "tabPageEditarePacient" && t.Name != "tabPageConsultatii" && t.Name != "tabPageConsultatii")
                                 {
                                     this.tabControl1.TabPages.Add(t);
                                 }
@@ -80,32 +81,16 @@ namespace Proiect
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'cabinetDataSet5.ViewConsultatii' table. You can move, or remove it, as needed.
-            this.viewConsultatiiTableAdapter1.Fill(this.cabinetDataSet5.ViewConsultatii);
-            // TODO: This line of code loads data into the 'cabinetDataSet41.ViewConsultatii' table. You can move, or remove it, as needed.
-            this.viewConsultatiiTableAdapter.Fill(this.cabinetDataSet41.ViewConsultatii);
-            // TODO: This line of code loads data into the 'cabinetDataSet31.ViewProgramari' table. You can move, or remove it, as needed.
-            this.viewProgramariTableAdapter3.Fill(this.cabinetDataSet31.ViewProgramari);
-            // TODO: This line of code loads data into the 'cabinetDataSet21.ViewProgramari' table. You can move, or remove it, as needed.
-            this.viewProgramariTableAdapter2.Fill(this.cabinetDataSet21.ViewProgramari);
-            // TODO: This line of code loads data into the 'cDS.ViewProgramari' table. You can move, or remove it, as needed.
-            this.viewProgramariTableAdapter1.Fill(this.cDS.ViewProgramari);
-            // TODO: This line of code loads data into the 'cabinetDataSet11.ViewProgramari' table. You can move, or remove it, as needed.
-            this.viewProgramariTableAdapter.Fill(this.cabinetDataSet11.ViewProgramari);
-            // TODO: This line of code loads data into the 'cDS.ViewPacienti' table. You can move, or remove it, as needed.
-            this.viewPacientiTableAdapter.Fill(this.cDS.ViewPacienti);
-            try
-            {
-                // TODO: This line of code loads data into the 'cabinetDataSet1.ViewPacienti4' table. You can move, or remove it, as needed.
-                this.viewPacienti4TableAdapter.Fill(this.cabinetDataSet1.ViewPacienti4);
-            }
-            catch(Exception exp)
-            {
-
-            }
+            // TODO: This line of code loads data into the 'cabinetDataSet6.ViewConsultatii' table. You can move, or remove it, as needed.
+            this.viewConsultatiiTableAdapter.Fill(this.cabinetDataSet6.ViewConsultatii);
+            // TODO: This line of code loads data into the 'cabinetDataSet6.ViewProgramari' table. You can move, or remove it, as needed.
+            this.viewProgramariTableAdapter.Fill(this.cabinetDataSet6.ViewProgramari);
+            // TODO: This line of code loads data into the 'cabinetDataSet6.ViewPacienti' table. You can move, or remove it, as needed.
+            this.viewPacientiTableAdapter.Fill(this.cabinetDataSet6.ViewPacienti);
 
 
-            foreach(TabPage t in tabControl1.TabPages)
+
+            foreach (TabPage t in tabControl1.TabPages)
             {
                 tabs.Add(t);
 
@@ -239,7 +224,7 @@ namespace Proiect
                             dt.Load(result);
                             sql.Close();
 
-                            //dataGridView1.DataSource = dt;
+                            dataGridView1.DataSource = dt;
                         }
                         catch (Exception exp)
                         {
@@ -529,33 +514,45 @@ namespace Proiect
 
         private async void radioButtonAfisareCustom_CheckedChanged(object sender, EventArgs e)
         {
-            using (SqlConnection sql = new SqlConnection(this.ConnectionString))
+            if(radioButtonAfisareCustom.Checked == true)
             {
-                using (SqlCommand cmd = new SqlCommand("[dbo].[SelectareConsultatii]", sql))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@IdDoctor", 1);
-                    cmd.Parameters.AddWithValue("@PerioadaStart", this.dateTimePicker1.Value);
-                    cmd.Parameters.AddWithValue("@PerioadaStop", this.dateTimePicker2.Value);
-                    try
-                    {
-                        sql.Open();
-                        DataTable dt = new DataTable();
-                        var result = await cmd.ExecuteReaderAsync();
-                        dt.Load(result);
-                        sql.Close();
+                dateTimePicker1.Enabled = true;
+                dateTimePicker2.Enabled = true;
 
-                        dataGridViewProgramari.DataSource = dt;
-                    }
-                    catch (Exception exp)
+                using (SqlConnection sql = new SqlConnection(this.ConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("[dbo].[SelectareConsultatii]", sql))
                     {
-                        var x = exp.Message;
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@IdDoctor", 1);
+                        cmd.Parameters.AddWithValue("@PerioadaStart", this.dateTimePicker1.Value);
+                        cmd.Parameters.AddWithValue("@PerioadaStop", this.dateTimePicker2.Value);
+                        try
+                        {
+                            sql.Open();
+                            DataTable dt = new DataTable();
+                            var result = await cmd.ExecuteReaderAsync();
+                            dt.Load(result);
+                            sql.Close();
+
+                            dataGridViewProgramari.DataSource = dt;
+                        }
+                        catch (Exception exp)
+                        {
+                            var x = exp.Message;
+
+                        }
 
                     }
 
                 }
-
             }
+            else
+            {
+                dateTimePicker1.Enabled = false;
+                dateTimePicker2.Enabled = false;
+            }
+            
         }
 
         private void btnAdaugareProgramare_Click(object sender, EventArgs e)
@@ -644,14 +641,12 @@ namespace Proiect
            
                 foreach (TabPage p in tabs)
                 {
-                    if (p.Name == "tabPageAllConsultatii")
+                    if (p.Name == "tabPageConsultatii")
                     {
                         using (SqlConnection sql = new SqlConnection(this.ConnectionString))
                         {
-                            using (SqlCommand cmd = new SqlCommand("SELECT Nume,Prenume FROM [Cabinet].[dbo].[Pacient]", sql))
+                            using (SqlCommand cmd = new SqlCommand("SELECT Nume,Prenume,CNP FROM [Cabinet].[dbo].[Pacient]", sql))
                             {
-                                cmd.CommandType = CommandType.StoredProcedure;
-                                cmd.Parameters.AddWithValue("@Nume", (sender as TextBox).Text);
                                 try
                                 {
                                     sql.Open();
@@ -662,7 +657,7 @@ namespace Proiect
 
                                     for(int i = 0; i < dt.Rows.Count; i++)
                                     {
-                                        listBox1.Items.Add($"{dt.Rows[i][0]} {dt.Rows[i][1]}");
+                                        listBox1.Items.Add($"{dt.Rows[i][0]} {dt.Rows[i][1]}-{dt.Rows[i][2]}");
                                     }
                                 }
                                 catch (Exception exp)
@@ -678,10 +673,6 @@ namespace Proiect
                         tabControl1.TabPages.Add(p);
                         tabControl1.SelectedTab = p;
 
-
-
-
-                        
                     }
                 }
             
@@ -735,6 +726,7 @@ namespace Proiect
                     cmd.Parameters.AddWithValue("@CNP", label30.Text);
                     cmd.Parameters.AddWithValue("@Data", DateTime.Now.ToString());
                     cmd.Parameters.AddWithValue("@Simptome", textBox2.Text);
+                    cmd.Parameters.AddWithValue("@ConcediuMedical", checkBox1.Checked);
                     cmd.Parameters.AddWithValue("@Diagnostic", textBox3.Text);
                     cmd.Parameters.AddWithValue("@Prescriptii", textBox4.Text);
 
@@ -774,7 +766,7 @@ namespace Proiect
 
                         for (int i = 0; i < dt.Rows.Count; i++)
                         {
-                            listBox1.Items.Add($"{dt.Rows[i][0]} {dt.Rows[i][1]}-{dt.Rows[i][3]}");
+                            listBox1.Items.Add($"{dt.Rows[i][0]} {dt.Rows[i][1]}-{dt.Rows[i][2]}");
                         }
                     }
                     catch (Exception exp)
@@ -790,18 +782,115 @@ namespace Proiect
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(listBox1.SelectedIndex >= 0)
-            {
-                panel6.Visible = false;
-                label28.Text = listBox1.SelectedItem.ToString().Split('-')[0];
-                label29.Text = listBox1.SelectedItem.ToString().Split('-')[1].Split('-')[0];
-                label30.Text = listBox1.SelectedItem.ToString().Split('-')[1].Split('-')[1];
-            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             panel6.Visible = true;
         }
+
+        private async void textBox14_TextChanged_1(object sender, EventArgs e)
+        {
+            using (SqlConnection sql = new SqlConnection(this.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand($"SELECT Nume,Prenume,CNP FROM [Cabinet].[dbo].[Pacient] where Nume LIKE '{(sender as TextBox).Text}%'", sql))
+                {
+                    try
+                    {
+                        listBox1.Items.Clear();
+                        sql.Open();
+                        DataTable dt = new DataTable();
+                        var result = await cmd.ExecuteReaderAsync();
+                        dt.Load(result);
+                        sql.Close();
+
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            listBox1.Items.Add($"{dt.Rows[i][0]} {dt.Rows[i][1]}-{dt.Rows[i][2]}");
+                        }
+                    }
+                    catch (Exception exp)
+                    {
+                        var x = exp.Message;
+
+                    }
+
+                }
+
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex >= 0)
+            {
+                panel6.Visible = false;
+                label28.Text = listBox1.SelectedItem.ToString().Split(' ')[0];
+                label29.Text = listBox1.SelectedItem.ToString().Split(' ')[1].Split('-')[0];
+                label30.Text = listBox1.SelectedItem.ToString().Split(' ')[1].Split('-')[1];
+            }
+        }
+
+        private async void button3_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sql = new SqlConnection(this.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand($"SELECT * FROM ViewConsultatii", sql))
+                {
+                    try
+                    {
+          
+                        sql.Open();
+                        DataTable dt = new DataTable();
+                        var result = await cmd.ExecuteReaderAsync();
+                        dt.Load(result);
+                        sql.Close();
+                        dataGridView2.DataSource = dt;
+
+                        
+                    }
+                    catch (Exception exp)
+                    {
+                        var x = exp.Message;
+
+                    }
+
+                }
+
+            }
+        }
+        
+        private async void button4_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sql = new SqlConnection(this.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand($"SELECT * FROM ViewProgramari", sql))
+                {
+                    try
+                    {
+
+                        sql.Open();
+                        DataTable dt = new DataTable();
+                        var result = await cmd.ExecuteReaderAsync();
+                        dt.Load(result);
+                        sql.Close();
+                        dataGridViewProgramari.DataSource = dt;
+
+
+                    }
+                    catch (Exception exp)
+                    {
+                        var x = exp.Message;
+
+                    }
+
+                }
+
+            }
+        }
+
+       
+        
     }
 }
